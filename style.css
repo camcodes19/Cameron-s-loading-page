@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+header,
+footer {
+  background: #1f2937;
+  color: white;
+}
+
+nav,
+.hero,
+main > section {
+  max-width: 1000px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav strong {
+  font-size: 24px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 70px 20px;
+}
+
+.hero > div {
+  flex: 1;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.hero p {
+  color: #e5e7eb;
+  line-height: 1.5;
+}
+
+button {
+  padding: 9px 24px;
+  border: 0;
+  border-radius: 7px;
+  background: #3882f6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-image {
+  display: grid;
+  min-height: 200px;
+  place-items: center;
+  background: #6b7280;
+  color: #e5e7eb;
+  overflow: hidden;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.features {
+  padding: 45px 20px 80px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+article {
+  width: 150px;
+}
+
+.box {
+  display: grid;
+  height: 150px;
+  place-items: center;
+  border: 4px solid #3882f6;
+  border-radius: 12px;
+  color: #3882f6;
+  font-size: 40px;
+}
+
+.quote {
+  padding: 70px 15%;
+  background: #e5e7eb;
+}
+
+blockquote {
+  margin: 0;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.quote p {
+  text-align: right;
+  font-weight: bold;
+}
+
+.callout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 35px 70px;
+  border-radius: 10px;
+  background: #3882f6;
+  color: white;
+}
+
+.callout h3,
+.callout p {
+  margin: 4px 0;
+}
+
+.callout button {
+  border: 2px solid white;
+}
+
+footer {
+  padding: 35px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .hero,
+  .cards,
+  .callout {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .callout {
+    margin: 40px 20px;
+    text-align: center;
+  }
+}
